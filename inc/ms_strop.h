@@ -98,13 +98,11 @@ typedef enum strlib_escape_chars_t {
 /** \brief      ms_strlib_remove_backspaces.
  *              This function breaks string into tokens.
  *              Will not remove NULLVAL from a string.
- *  \param      pp_buffer.
- *              This parameter is a pointer to pointer to a valid memory containing
+ *  \param      p_buffer.
+ *              This parameter is a pointer to a valid memory containing
  *              null terminated string that needs to be processed.
- *  \param      p_delimeters.
- *              pointer to null term string of delimiters.
- *  \param      pp_out_token.
- *              pointer to next token in *pp_out_token.
+ *  \param      max_len.
+ *              maximum characters in the string excluding null character.
  *  \return     error code ms_strlib_err_t.
  */
 void ms_strlib_remove_backspaces(char * p_buffer, size_t max_len);
