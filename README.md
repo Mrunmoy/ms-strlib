@@ -1,0 +1,2 @@
+# ms-strlib
+string library
